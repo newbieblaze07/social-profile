@@ -1,17 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Inter;
 }
 
 body {
+    height: 100vh;
     background-color: #141414;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 .container {
     width: 327px;
-    margin: 75px auto;
     background-color: #1f1f1f;
     border-radius: 12px;
     padding: 24px;
@@ -33,51 +37,64 @@ body {
     flex-direction: column;
     gap: 4px;
     text-align: center;
-    
+
 }
-.head h1{
+
+.head h1 {
     color: white;
     font-size: 24px;
     line-height: 150%;
 }
-.head h2{
+
+.head h2 {
     color: #c4f82a;
     font-size: 14px;
     line-height: 150%;
 }
-p{
+
+p {
     color: white;
     text-align: center;
     font-size: 14px;
     line-height: 150%;
-    
+
 }
-.buttons{
+
+.links ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
 }
-.buttons a{
+
+.links a {
     text-decoration: none;
+    text-align: center;
     color: white;
-}
-.buttons button{
     background-color: #333333;
     height: 45px;
     padding: 12px;
     border-radius: 8px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media only screen and (min-width:1080px){
-    .buttons button:hover{
+
+
+@media only screen and (min-width:1080px) {
+    .links a:hover {
         background-color: #c4f82a;
-        
+
     }
-    .buttons a:hover{
+
+    .links a:hover {
         color: #333;
     }
-    .buttons button{
+
+    .links a {
         transition: all 0.5s ease;
     }
-    
+
 }
